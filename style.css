@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(clock.png);
+    background-size:contain;
+    border-radius: 50%;
+    border: 5px solid red;
+    position: absolute;
+}
+
+#second{
+height: 100px;
+width: 2px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+left: 199px;
+top: 100px;
+transform-origin: 0% 100%;
+}
+
+#minute{
+height: 110px;
+width: 3px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+left: 199px;
+top: 90px;
+transform-origin: 0% 100%;
+}
+
+#hour{
+    height: 80px;
+    width: 4.5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 202px;
+    top: 120px;
+    transform-origin: 0% 100%;
+}
+
+#center-circle{
+    height: 15px;
+    width: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (width < 500px) {
+    .main-box{
+        scale: 0.7;
+    }
+}
